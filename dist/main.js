@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("one")})();
+(()=>{"use strict";(()=>{const e=document.querySelector(".up"),o=()=>{e.style.display="none"};window.addEventListener("scroll",(()=>{(window.scrollY||document.documentElement.scrollTop)>120?e.style.display="block":o()})),document.querySelector(".up").addEventListener("click",(()=>{window.scrollTo({top:0,left:0,behavior:"smooth"})})),o()})()})();

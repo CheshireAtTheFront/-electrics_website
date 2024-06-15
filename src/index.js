@@ -1,3 +1,3 @@
-import one from "./modules/one";
+import btnUp from "./modules/btnUp";
 
-one();
+btnUp();
