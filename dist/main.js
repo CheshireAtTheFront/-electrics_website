@@ -1,0 +1,1 @@
+(()=>{"use strict";(()=>{const e=document.querySelector(".top-menu").querySelectorAll("a[href^='#']");for(let t of e)t.addEventListener("click",(e=>{e.preventDefault();const o=t.getAttribute("href");document.querySelector(o).scrollIntoView({behavior:"smooth",block:"start"})}))})()})();
