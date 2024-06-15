@@ -1,0 +1,1 @@
+(()=>{"use strict";(()=>{const e=document.querySelector(".top-slider").querySelectorAll(".item");let t=0;setInterval((()=>{e[t].style.display="none",t++,t>=e.length&&(t=0),e[t].style.display="block"}),3e3)})()})();
