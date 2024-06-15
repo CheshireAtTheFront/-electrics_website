@@ -949,7 +949,7 @@ video#video_background {
     transition: 0.5s;
   }
   .top-slider .table.active {
-    webkit-transform: scale(1);
+    -webkit-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
@@ -1163,6 +1163,7 @@ video#video_background {
   transition: all 200ms ease-out;
 }
 .services-section .element:hover .img-wrapper img {
+  transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
