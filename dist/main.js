@@ -1,0 +1,1 @@
+(()=>{"use strict";(()=>{const e=document.querySelector(".services-carousel").querySelectorAll(".service");document.querySelector(".services-arrow").addEventListener("click",(o=>{let s=o.target;console.log(e.length),e.forEach(((e,o)=>{console.log(e),console.log(o),s.classList.contains("arrow-left")&&(e.style.display="none"),s.classList.contains("arrow-right")}))}))})()})();
