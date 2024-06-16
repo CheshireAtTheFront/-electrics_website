@@ -1,12 +1,12 @@
 import { animate } from "./helpers";
 
 const modal = () => {
-  const headerMenu = document.querySelector(".header");
-  const btnMenu = headerMenu.querySelector(".callback-btn");
   const modalOverlay = document.querySelector(".modal-overlay");
   const modal = modalOverlay.querySelector(".modal-callback");
 
-  btnMenu.addEventListener("click", () => {
+  document.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (!e.target.closest(".fancyboxModal")) return;
     modalOverlay.style.display = "block";
     animate({
       duration: 500,
