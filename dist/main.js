@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("one")})();
+(()=>{"use strict";(()=>{const e=document.querySelector(".accordeon"),t=e.querySelectorAll(".element");e.addEventListener("click",(e=>{t.forEach((t=>{e.target===t.querySelector(".title")?(t.classList.toggle("active"),t.matches(".active")?t.querySelector(".element-content").style.display="block":t.querySelector(".element-content").style.display="none"):(t.classList.remove("active"),t.querySelector(".element-content").style.display="none")}))}))})()})();

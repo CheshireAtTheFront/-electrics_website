@@ -1,3 +1,3 @@
-import one from "./modules/one";
+import accordeon from "./modules/accordeon";
 
-one();
+accordeon();
