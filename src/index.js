@@ -1,3 +1,3 @@
-import one from "./modules/one";
+import modal from "./modules/modal";
 
-one();
+modal();

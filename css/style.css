@@ -254,6 +254,7 @@ a.absolute {
 .form-group {
   position: relative;
 }
+
 .modal {
   display: none;
   width: 460px;
@@ -261,6 +262,7 @@ a.absolute {
   background: #fff;
   padding: 55px 25px 35px;
 }
+
 .modal-overlay {
   display: none;
   position: fixed;
@@ -282,10 +284,9 @@ a.absolute {
   cursor: pointer;
 }
 .modal-callback {
-  display: none;
   position: fixed;
   top: 20%;
-  left: 50%;
+  /* left: 50%; */
   transform: translateX(-50%);
   width: 460px;
   max-width: 100%;
@@ -938,8 +939,8 @@ video#video_background {
     height: 520px;
   }
   .top-slider .table {
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 1;
+    visibility: hidden; */
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
@@ -948,7 +949,7 @@ video#video_background {
     -o-transition: 0.5s;
     transition: 0.5s;
   }
-  .top-slider .table.active {
+  .top-slider .table .active {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
