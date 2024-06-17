@@ -15,14 +15,6 @@ const accordeon = () => {
         elem.classList.remove("active");
         elem.querySelector(".element-content").style.display = "none";
       }
-
-      // if (e.target === elem.querySelector(".title")) {
-      //   // elem.className = "element active";
-      //   elem.querySelector(".element-content").style.display = "block";
-      // } else {
-      //   // elem.className = "element";
-      //   elem.querySelector(".element-content").style.display = "none";
-      // }
     });
   });
 };
