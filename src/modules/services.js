@@ -1,26 +1,43 @@
 const services = () => {
-  const servicesCarousel = document.querySelector(".services-carousel");
-  const cards = servicesCarousel.querySelectorAll(".service");
-  //   вешать делегирование
-  const servicesArrow = document.querySelector(".services-arrow");
-  //   arrow-left
-  // arrow-right
-  let current = 2;
+  const cards = document.querySelectorAll(".service");
+  const arrowRight = document.querySelector(".arrow-right");
+  const arrowLeft = document.querySelector(".arrow-left");
 
-  servicesArrow.addEventListener("click", (e) => {
-    let target = e.target;
-    console.log(cards.length);
-    cards.forEach((card, index) => {
-      console.log(card);
-      console.log(index);
-      if (target.classList.contains("arrow-left")) {
-        card.style.display = "none";
-        current--;
-      }
-      if (target.classList.contains("arrow-right")) {
-        current++;
-      }
-    });
+  let position;
+  let start = 0;
+
+  if (window.outerWidth < 570) {
+    position = 1;
+  } else if (window.outerWidth < 870 && window.outerWidth > 570) {
+    position = 2;
+  } else {
+    position = 3;
+  }
+
+  cards.forEach((item) => {
+    if (start < position) {
+      start++;
+    } else {
+      item.classList.add("d-none");
+    }
+  });
+
+  start = 0;
+
+  arrowLeft.addEventListener("click", () => {
+    if (start > 0) {
+      start = start - 1;
+      position = position - 1;
+      cards[start].classList.remove("d-none");
+      cards[position].classList.add("d-none");
+    }
+  });
+
+  arrowRight.addEventListener("click", () => {
+    if (position < cards.length) {
+      cards[start++].classList.add("d-none");
+      cards[position++].classList.remove("d-none");
+    }
   });
 };
 
