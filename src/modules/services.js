@@ -6,9 +6,9 @@ const services = () => {
   let position;
   let start = 0;
 
-  if (window.outerWidth < 570) {
+  if (window.innerWidth < 760) {
     position = 1;
-  } else if (window.outerWidth < 870 && window.outerWidth > 570) {
+  } else if (window.innerWidth < 960 && window.innerWidth > 570) {
     position = 2;
   } else {
     position = 3;
