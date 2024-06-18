@@ -5,7 +5,6 @@ const modal = () => {
   const modal = modalOverlay.querySelector(".modal-callback");
 
   document.addEventListener("click", (e) => {
-    e.preventDefault();
     if (!e.target.closest(".fancyboxModal")) return;
     modalOverlay.style.display = "block";
     animate({
