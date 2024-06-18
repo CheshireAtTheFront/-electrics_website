@@ -8,7 +8,7 @@ const modal = () => {
     if (!e.target.closest(".fancyboxModal")) return;
     modalOverlay.style.display = "block";
     animate({
-      duration: 500,
+      duration: 300,
       timing(timeFraction) {
         return timeFraction;
       },
@@ -27,7 +27,7 @@ const modal = () => {
       e.target.classList.contains("modal-overlay")
     ) {
       animate({
-        duration: 500,
+        duration: 300,
         timing(timeFraction) {
           return timeFraction;
         },
