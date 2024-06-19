@@ -12,7 +12,6 @@ const modal = () => {
       timing(timeFraction) {
         return timeFraction;
       },
-      // возвращает определенный отрезок от 0 до 1
       draw(progress) {
         modalOverlay.style.opacity = progress;
         modal.style.left = progress * 50 + "%";
@@ -31,7 +30,6 @@ const modal = () => {
         timing(timeFraction) {
           return timeFraction;
         },
-        // возвращает определенный отрезок от 1 до 0
         draw(progress) {
           modalOverlay.style.opacity = 1 - progress;
           modal.style.right = progress * -50 + "%";

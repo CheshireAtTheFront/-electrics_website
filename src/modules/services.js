@@ -26,7 +26,7 @@ const services = () => {
 
   arrowLeft.addEventListener("click", () => {
     if (start > 0) {
-      start = start - 1;
+      start -= 1;
       position = position - 1;
       cards[start].classList.remove("d-none");
       cards[position].classList.add("d-none");

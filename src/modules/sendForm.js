@@ -32,19 +32,15 @@ const sendForm = () => {
   };
 
   const sendData = (data) => {
-    // data - объект который будет отправляться
     return fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",
-      // отправка объекта производится в json формате
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" },
     }).then((res) => res.json());
-    // методом JSON разворачиваем ответ от сервера(response)
   };
 
   const submitForm = () => {
     const formElement = form.querySelectorAll(".form-control");
-    // собираем данные из формы
     const formData = new FormData(form);
     const user = {};
 
@@ -56,7 +52,6 @@ const sendForm = () => {
     });
 
     if (validate(formElement)) {
-      // передаем объект
       sendData(user)
         .then((data) => {
           statusBlock.textContent = successText;
